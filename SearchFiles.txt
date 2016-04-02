@@ -1,3 +1,4 @@
+package Lucene;
 /*
 002 * Licensed to the Apache Software Foundation (ASF) under one or more
 003 * contributor license agreements.  See the NOTICE file distributed with
@@ -14,7 +15,7 @@
 014 * See the License for the specific language governing permissions and
 015 * limitations under the License.
 016 */
-package lucene;
+
 
 
 import java.io.BufferedReader;
@@ -51,13 +52,13 @@ public class SearchFiles {
       System.exit(0);
     }
 
-    String index = "/users/case4/hurlec25/Lucene/Index";
+    String index = "D:/College/Project4/Test data/testpath";
     String field = "contents";
     String queries = null;
     int repeat = 0;
     boolean raw = false;
     String queryString = null;
-    int hitsPerPage = 10;
+    int hitsPerPage = 50;
     
     for(int i = 0;i < args.length;i++) {
       if ("-index".equals(args[i])) {
